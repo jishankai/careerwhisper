@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  root to: 'site#index'
+
+  match ':controller(/:action(/:id(.:format)))', :via => :all
+
+  resource :wechat, only: [:show, :create]
 end

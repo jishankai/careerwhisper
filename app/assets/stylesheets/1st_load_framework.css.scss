@@ -44,3 +44,43 @@ section {
   @extend .row;
   margin-top: 20px;
   }
+
+.card_pre{
+    background:image-url('city.jpg') no-repeat center scroll;
+    background-size:cover
+}
+.slickcard{
+    background-size:100%;
+    background-color: white;
+
+}
+
+.text-mutedv{
+    color:white;
+    margin-top: 44%;
+}
+.text-primaryv{
+    color: white;
+    font-size: 12px;
+    margin-top:-5px;
+}
+.text-subheading1{
+    margin-top:12%;
+    font-size: 14px;
+}
+.text-subheading2{
+    margin-top: -8px;
+    font-size: 14px;
+
+}
+.text-justifyv{
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.slick_wrapper {
+    margin: 30px 30px;
+    padding: 0px 0px;
+    /* height: 512px; */
+    width:415px;
+}
