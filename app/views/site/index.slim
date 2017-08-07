@@ -1,0 +1,227 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    meta[name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"]
+    meta[name="description" content=""]
+    meta[name="author" content=""]
+    title
+      | 职业说
+    link[href="css/bootstrap.min.css" rel="stylesheet"]
+    link[href="css/stylish-portfolio.css" rel="stylesheet"]
+    link[href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"]
+    link[href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"]
+    link[rel="stylesheet" type="text/css" href="slick/slick.css"]
+    link[rel="stylesheet" type="text/css" href="slick/slick-theme.css"]
+    link[rel="stylesheet" type="text/css" href="css/site.css"]
+  body
+    a#menu-toggle.btn.btn-dark.btn-lg.toggle[href="#"]
+      i.fa.fa-bars
+    nav#sidebar-wrapper
+      ul.sidebar-nav
+
+      a#menu-close.btn.btn-light.btn-lg.pull-right.toggle[href="#"]
+        i.fa.fa-times
+      li.sidebar-brand
+        a[href="#top"] onclick="$(\"#menu-close\").click();"
+          | 职业说
+      li
+        a[href="#top"] onclick="$(\"#menu-close\").click();"
+          | 首页
+      li
+        a[href="#top"] onclick="$(\"#menu-close\").click();"
+          | 课程
+      li
+        a[href="#mentors"] onclick="$(\"#menu-close\").click();"
+          | 导师
+      li
+        a[href="#alumni"] onclick="$(\"#menu-close\").click();"
+          | 校友
+      li
+        a[href="http://dwz.cn/5VXWfV"] onclick="$(\"#menu-close\").click();"
+          | 关于我们
+      li
+        a[href="#footer"] onclick="$(\"#menu-close\").click();"
+          | 联系我们
+    header#top.header
+      .text-vertical-center
+        img[src="img/careerwhisper.png"]
+        h3
+          | 高端职业知识付费分享平台
+        br
+        a.btn.btn-lg[href="#about" style="color:#fff; background-color:#00a3c6"]
+          | Career Whisper
+    section#about.about
+      .container
+        .row
+          .col-lg-12.text-center
+            center
+              img.img-responsive[src="img/invitation.png"]
+            h2
+              | 职业说
+            p.lead.text-left
+              | 职业说是国内首家致力于职业素质养成，职场前期能力培养的在线平台，我们的导师均毕业于英美前10名商学院，并拥有海内外顶尖投行基金公司等任职经历
+    section#services.services[style="color:#fff; background-color:#00a3c6"]
+      .container
+        .row.text-center
+          h2
+            | 我们的使命
+          hr.small
+          .row
+            .col-md-4.col-sm-4
+              .service-item
+                span.fa-stack.fa-4x
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-file-text-o.fa-stack-1x[style="color:#00a3c6"]
+                p.text-justified
+                  | 弥补学校教育和职场工作的不对称
+            .col-md-4.col-sm-4
+              .service-item
+                span.fa-stack.fa-4x
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-diamond.fa-stack-1x[style="color:#00a3c6"]
+                p.text-justified
+                  | 长线培养学生实操能力和对金融IT的市场变化的敏锐度
+            .col-md-4.col-sm-4
+              .service-item
+                span.fa-stack.fa-4x
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-shield.fa-stack-1x[style="color:#00a3c6"]
+                p.text-justified
+                  | 为国内外知名企业储备优秀人才，帮助优秀学生更早适应职场生活
+    center
+      .text-vertical-center
+        img.img-responsive[src="img/aboutus.jpg"]
+    center[style="background-color:#00809d"]
+      .text-vertical-center
+        img.img-responsive[src="img/atcareerwhisper.jpg"]
+    .row.mentors
+      .row
+        h2.text-center
+          | 职业说的导师们
+        .slick
+          center.slick_wrapper.slickcard.slick1
+            h4.text-mutedv
+              | 肇越
+            p.text-justifyv.text-justify
+              | 致富集团首席经济学家，兼任致富集团研究院院长。曾为中国投资有限公司高级业务主管。参与中投上千亿美金的宏观配置。2005年获得清华大学五道口金融学院经济学博士学位，师从周小川。
+          center.slick_wrapper.slickcard.slick2
+            h4.text-mutedv
+              | 唐大牛
+            p.text-justifyv.text-justify
+              | 华创资本合伙人。天使投资人。曾任易观国际研究事业部负责人兼首席分析师。加入华创前有两段美元基金工作经历。在Ventech China任合伙人时，主要负责聚美优品、WiseMedia、百程旅行网和真朴教育等项目的投资。唐先生热衷公益和户外活动。
+          center.slick_wrapper.slickcard.slick3
+            h4.text-mutedv
+              | 陈斓杰
+            p.text-justifyv.text-justify
+              | 金沙江创投合伙人，人工智能公司advance.ai的联合创始人兼首席执行官。曾是法拉龙资本中国私人投资部门的主管。他是斯坦福大学最大的企业家协会——中国企业家组织的创始人之一，获得了清华大学的计算机软件学士学位，斯坦福大学MBA。
+          center.slick_wrapper.slickcard.slick4
+            h4.text-mutedv
+              | 许轶
+            p.text-justifyv.text-justify
+              | 斯坦福大学MBA，芝加哥大学硕士，Focusedu（时代焦点教育）联合创始人之一，曾就职于美国第一投资银行高盛公司和欧洲顶级投资银行瑞士信贷美国旧金山办公室。先后在一级投资市场中投资过两家超过十亿的公司，操盘的股票年收益率达到惊人的150%，投资经验丰富（欢迎实盘验证）。
+          center.slick_wrapper.slickcard.slick5
+            h4.text-mutedv
+              | 王鹤菲
+            p.text-justifyv.text-justify
+              | 中国人民大学汉青经济与金融高级研究院副教授，美国斯坦福大学金融学博士。曾在美国伊利诺伊大学芝加哥分校商学院任教。研究领域为公司财务理论、信息经济学、金融机构激励机制、资产组合理论、主权基金等。
+          center.slick_wrapper.slickcard.slick6
+            h4.text-mutedv
+              | Jack Wang 
+            p.text-justifyv.text-justify
+              | 投资人，投资过独角兽“黑科技”公司柔宇科技，现任硅谷人工智能创业公司minmax　CEO。曾就职于硅谷Oracle 和IBM。本科毕业于Waterloo大学，研究生毕业于斯坦福工程学院。
+      / .row
+      /   h2.text-center
+      /     | 职业说的顾问们
+      /   .slick_guests
+      /     center.slick_wrapper.slickcard.slick1
+      /       h4.text-mutedv
+      /         | 肇越
+      /       p.text-justifyv.text-justify
+      /         | 致富集团首席经济学家，兼任致富集团研究院院长。曾为中国投资有限公司高级业务主管。参与中投上千亿美金的宏观配置。2005年获得清华大学五道口金融学院经济学博士学位，师从周小川。
+      /     center.slick_wrapper.slickcard.slick2
+      /       h4.text-mutedv
+      /         | 唐大牛
+      /       p.text-justifyv.text-justify
+      /         | 华创资本合伙人。天使投资人。曾任易观国际研究事业部负责人兼首席分析师。加入华创前有两段美元基金工作经历。在Ventech China任合伙人时，主要负责聚美优品、WiseMedia、百程旅行网和真朴教育等项目的投资。唐先生热衷公益和户外活动。
+      /     center.slick_wrapper.slickcard.slick3
+      /       h4.text-mutedv
+      /         | 陈斓杰
+      /       p.text-justifyv.text-justify
+      /         | 金沙江创投合伙人，人工智能公司advance.ai的联合创始人兼首席执行官。曾是法拉龙资本中国私人投资部门的主管。他是斯坦福大学最大的企业家协会——中国企业家组织的创始人之一，获得了清华大学的计算机软件学士学位，斯坦福大学MBA。
+      /     center.slick_wrapper.slickcard.slick4
+      /       h4.text-mutedv
+      /         | 许轶
+      /       p.text-justifyv.text-justify
+      /         | 斯坦福大学MBA，芝加哥大学硕士，Focusedu（时代焦点教育）联合创始人之一，曾就职于美国第一投资银行高盛公司和欧洲顶级投资银行瑞士信贷美国旧金山办公室。先后在一级投资市场中投资过两家超过十亿的公司，操盘的股票年收益率达到惊人的150%，投资经验丰富（欢迎实盘验证）。
+      /     center.slick_wrapper.slickcard.slick5
+      /       h4.text-mutedv
+      /         | 王鹤菲
+      /       p.text-justifyv.text-justify
+      /         | 中国人民大学汉青经济与金融高级研究院副教授，美国斯坦福大学金融学博士。曾在美国伊利诺伊大学芝加哥分校商学院任教。研究领域为公司财务理论、信息经济学、金融机构激励机制、资产组合理论、主权基金等。
+      /     center.slick_wrapper.slickcard.slick6
+      /       h4.text-mutedv
+      /         | Jack Wang 
+      /       p.text-justifyv.text-justify
+      /         | 投资人，投资过独角兽“黑科技”公司柔宇科技，现任硅谷人工智能创业公司minmax　CEO。曾就职于硅谷Oracle 和IBM。本科毕业于Waterloo大学，研究生毕业于斯坦福工程学院。
+      /     center.slick_wrapper.slickcard.slick7
+      /       h4.text-mutedv
+      /         | 赵鑫 
+      /       p.text-justifyv.text-justify
+      /         | 7k7k创始人和CEO。百度早期员工。7k7k是国内最专业的休闲游戏网站之一。7k7k创建于2003年，公司创始人来自百度、Microsoft、Yahoo、Google、263首都在线等公司，是中国互联网最早的创业者之一。  
+    aside#weixin.call-to-action[style="color:#fff; background-color:#00a3c6"]
+      .container
+        .row
+          .col-lg-12.text-center
+            h2
+              | 关注我们
+            hr.small
+            .row
+              .col-md-12
+                .portfolio-item
+                  img.img-portfolio.img-responsive[src="img/careerwhisper_qr.jpg"]
+                  p
+                    | 职业说公众号二维码
+    footer#footer
+      .container
+        .row
+          .col-lg-10.col-lg-offset-1.text-center
+            h4
+              strong
+                | 职业说
+            p
+              | 北京市海淀区北三环西路64号院
+            ul.list-unstyled
+              li
+                p
+                  i.fa.fa-phone.fa-fw
+                  |  (010) 5292-8288转8018
+              li
+                p
+                  i.fa.fa-envelope-o.fa-fw
+                  a[href="mailto:careerwhisper@kanwokanwo.com"]
+                    | careerwhisper@kanwokanwo.com
+            br
+            ul.list-inline
+              li
+                a[href="#weixin"]
+                  i.fa.fa-weixin.fa-fw.fa-2x[style="color:#00a3c6"]
+              li
+                a[href="http://weibo.com/careerwhisper"]
+                  i.fa.fa-weibo.fa-fw.fa-2x[style="color:#00a3c6"]
+              li
+                a[href="#weixin"]
+                  i.fa.fa-qq.fa-fw.fa-2x[style="color:#00a3c6"]
+            hr.small
+            p.text-muted
+              | Copyright © 北京看我看我科技有限责任公司 2017
+            p.text-muted.small
+              | 京ICP备14049391号-1
+      a#to-top.btn.btn-dark.btn-lg[href="#top"]
+        i.fa.fa-chevron-up.fa-fw.fa-1x
+    script[src="js/jquery.js"]
+    script[src="js/bootstrap.min.js"]
+    script[type="text/javascript" src="slick/slick.min.js"]
+    script
+      |  $("#menu-close").click(function(e) { e.preventDefault(); $("#sidebar-wrapper").toggleClass("active"); }); $("#menu-toggle").click(function(e) { e.preventDefault(); $("#sidebar-wrapper").toggleClass("active"); }); $(function() { $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() { if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) { var target = $(this.hash); target = target.length ? target : $('[name=' + this.hash.slice(1) + ']'); if (target.length) { $('html,body').animate({ scrollTop: target.offset().top }, 1000); return false; } } }); }); var fixed = false; $(document).scroll(function() { if ($(this).scrollTop() > 250) { if (!fixed) { fixed = true; $('#to-top').show("slow", function() { $('#to-top').css({ position: 'fixed', display: 'block' }); }); } } else { if (fixed) { fixed = false; $('#to-top').hide("slow", function() { $('#to-top').css({ display: 'none' }); }); } } }); $(document).ready(function(){ $('.slick').slick({ autoplay: true, autoplaySpeed: 1500, centerMode: true, centerPadding: '60px', slidesToShow: 3, responsive: [ { breakpoint: 768, settings: { arrows: false, centerMode: true, centerPadding: '40px', slidesToShow: 3 } }, { breakpoint: 480, settings: { arrows: false, centerMode: true, centerPadding: '40px', slidesToShow: 1 } } ] });}); 

@@ -1,0 +1,57 @@
+
+.mentors{
+    background-image: url('../img/city.jpg');
+    background-size:cover;
+}
+.slickcard{
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-color: white;
+}
+.slick1{
+    background-image:url('../img/a_zhaoyue.jpg');
+}
+.slick2{
+    background-image:url('../img/a_tangdaniu.jpg');
+}
+.slick3{
+    background-image:url('../img/a_jefferson.jpg');
+}
+.slick4{
+    background-image:url('../img/a_xuyi.jpg');
+}
+.slick5{
+    background-image:url('../img/a_wanghefei.jpg');
+}
+.slick6{
+    background-image:url('../img/a_jackwang.jpg');
+}
+.slick7{
+    background-image:url('../img/a_zhaoxin.jpg');
+}
+.slick8{
+    background-image:url('../img/a_baofan.jpg');
+}
+.slick9{
+    background-image:url('../img/a_ramon.jpg');
+}
+.slick10{
+    background-image:url('../img/a_honghao.jpg');
+}
+
+.text-mutedv{
+    color:white;
+    margin-top: 44%;
+}
+
+.text-justifyv{
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.slick_wrapper {
+    margin: 30px 30px;
+    padding: 0px 0px;
+    /* height: 512px; */
+    width:415px;
+}
