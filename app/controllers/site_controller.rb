@@ -12,7 +12,13 @@ class SiteController < ApplicationController
 
   def books
   end
+  
+  def article
+  end
 
   def about
   end
+  
+  def articleDetails1
+  end 
 end
