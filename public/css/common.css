@@ -126,3 +126,33 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 .payCode dt{height:50px;}
 .payCode dd img{width:100%;max-width:230px;}
 .courseCode a{background-color:#0c547e;display:inline-block;padding:8px 40px;border-radius:25px;color:#fff;margin:6% 0;font-size:18px;}
+/*文章页面*/
+.article{background-color: #eee;}
+.article .banner{background-image: url(../images/articleDetails.jpg);}
+.article .listItem{padding: 3% 3% 3% 6%;box-shadow: 0 0.3rem 1rem #c0bfbf;margin: 30px 0 15px 0;background-color: #fff;cursor: pointer;}
+.article .listItem span{text-align: right;font-size: 15px;}
+.article .listItem b{font-size: 20px;font-family: "microsoft yahei"}
+.article .listItem p{padding-left: 0;font-size: 16px;color: #777;margin-top: 0.6rem;height: 70px;}
+.pagination>li>a{font-size: 15px;}
+.pagination>li>a.arrowBtn{border: none;margin-left: 0;padding:6px 15px;padding-bottom: 7px;background-color: #eee;margin: 0 3px;}
+.pagination>li>a:hover{background-color: #fff;}
+.pageList{text-align: center;margin: 2rem 0;}
+@media (max-width:768px){.article .listItem span{text-align: left;} .pagination>li>a{font-size: 13px;} .article .listItem b{font-size: 18px;} .article .listItem p{font-size: 14PX;padding-right: 0;height: auto;}}
+@media (max-width:310px){.pagination>li>a.arrowBtn{padding: 6px;}}
+/*文章详情子页面*/
+.articleDetails{background-color: #eee;padding-top: 2rem;}
+.articleDetails .container{background-color: #fff;padding: 3rem;}
+.introduce h5{font-size: 20px;font-weight: bold; font-family: "microsoft yahei";}
+.introduce i{font-style: normal;font-size: 15px;color: #9d9d9d;}
+.introduce span{color: #9d9d9d;font-size: 16px;padding: 5px 0 10px 15px;}
+.introduce p{font-size: 16px;padding: 20px 0;font-family: "microsoft yahei";width: 82.6%;background-color: #eee;margin-left: 15px;border-radius: 6px;color: #0f6d99;}
+.articleAudio audio{width: 94%;margin-top: 10px;}
+.articleAudio{background-color: rgba(51, 122, 183, 0.06);padding: 1.5rem;border: 1px solid #eee;width: 85%;margin: 5rem 0;}
+.articleAudio b{font-size: 17px;display:block;width: 94%;text-align: left;margin: 0 auto;}
+.articleImg img{padding:10px;}
+.articleImg .row{margin: 0;}
+.articleImg p{font-size: 15.4px;margin: 20px 0px;text-align: justify;}
+.articleTitle{font-size: 18px;padding: 10px 0;text-align: center;color: #0a588d;font-weight: bold;font-family: "microsoft yahei";}
+.articleTitle i{display: inline-block;width: 20%;border: 1px solid  #0a588d;}
+@media (max-width:768px){.articleTitle i{display: none;}.articleAudio audio{width: 100%;}.introduce p{text-align: left;width: 95%;padding:1rem;}.articleImg img{width: 76%;}.articleAudio{width: 100%;margin: 3rem 0;}}
+@media (max-width:460px){.articleImg img{width: 96%;}}
