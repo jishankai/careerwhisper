@@ -33,7 +33,7 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 .counselor dl{background-color:#fff;width:90%;margin:20px auto 0;padding-bottom:20px;}
 /*名师顾问*/
 .counselor dl {min-height:320px;}
-.counselor dl img{width: 142px;height: 140px;display: block;border-radius: 100%;margin: 0 auto;}
+.counselor dl img{width: 142px;display: block;border-radius: 100%;margin: 0 auto;}
 .counselor dl h3{color:#014e78;text-align: center;}
 .counselor dl h5{font-size:16px;line-height:1.4;text-align: center}
 .counselor dd{padding:0 20px;height:auto;}
