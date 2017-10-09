@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @survey.name
+p
+  strong Description:
+  = @survey.description
+p
+  strong Href:
+  = @survey.href
+p
+  strong Start at:
+  = @survey.start_at
+p
+  strong End at:
+  = @survey.end_at
+
+= link_to 'Edit', edit_survey_path(@survey)
+'  |
+= link_to 'Back', surveys_path

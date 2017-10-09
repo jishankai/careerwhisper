@@ -1,0 +1,16 @@
+= simple_form_for(@student) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :gender
+    = f.input :age
+    = f.input :major
+    = f.input :school
+    = f.input :company
+    = f.input :period
+    = f.input :email
+    = f.input :mobile
+
+  .form-actions
+    = f.button :submit

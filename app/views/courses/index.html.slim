@@ -1,0 +1,31 @@
+h1 Listing courses
+
+table
+  thead
+    tr
+      th Name
+      th Description
+      th Speaker
+      th Speaker intro
+      th Start at
+      th End at
+      th
+      th
+      th
+
+  tbody
+    - @courses.each do |course|
+      tr
+        td = course.name
+        td = course.description
+        td = course.speaker
+        td = course.speaker_intro
+        td = course.start_at
+        td = course.end_at
+        td = link_to 'Show', course
+        td = link_to 'Edit', edit_course_path(course)
+        td = link_to 'Destroy', course, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Course', new_course_path

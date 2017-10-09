@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Score:
+  = @credit.score
+p
+  strong Student:
+  = @credit.student
+
+= link_to 'Edit', edit_credit_path(@credit)
+'  |
+= link_to 'Back', credits_path
