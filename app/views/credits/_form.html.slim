@@ -1,0 +1,9 @@
+= simple_form_for(@credit) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :score
+    = f.association :student
+
+  .form-actions
+    = f.button :submit

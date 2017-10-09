@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @material.name
+p
+  strong Description:
+  = @material.description
+p
+  strong Href:
+  = @material.href
+p
+  strong Downloads:
+  = @material.downloads
+
+= link_to 'Edit', edit_material_path(@material)
+'  |
+= link_to 'Back', materials_path

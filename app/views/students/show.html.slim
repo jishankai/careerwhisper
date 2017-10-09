@@ -1,0 +1,33 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @student.name
+p
+  strong Gender:
+  = @student.gender
+p
+  strong Age:
+  = @student.age
+p
+  strong Major:
+  = @student.major
+p
+  strong School:
+  = @student.school
+p
+  strong Company:
+  = @student.company
+p
+  strong Period:
+  = @student.period
+p
+  strong Email:
+  = @student.email
+p
+  strong Mobile:
+  = @student.mobile
+
+= link_to 'Edit', edit_student_path(@student)
+'  |
+= link_to 'Back', students_path

@@ -1,0 +1,13 @@
+= simple_form_for(@course) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :description
+    = f.input :speaker
+    = f.input :speaker_intro
+    = f.input :start_at
+    = f.input :end_at
+
+  .form-actions
+    = f.button :submit

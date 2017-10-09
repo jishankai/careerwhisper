@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @task.name
+p
+  strong Description:
+  = @task.description
+p
+  strong Start at:
+  = @task.start_at
+p
+  strong End at:
+  = @task.end_at
+p
+  strong Answer:
+  = @task.answer
+p
+  strong Keys:
+  = @task.keys
+
+= link_to 'Edit', edit_task_path(@task)
+'  |
+= link_to 'Back', tasks_path
