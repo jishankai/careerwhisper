@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :courses
+  resources :tasks
+  resources :materials
+  resources :surveys
+  resources :students
+  resources :credits
   root to: 'site#index'
 
   get 'index' => 'site#index'
@@ -7,7 +13,7 @@ Rails.application.routes.draw do
   get 'teacher' => 'site#teacher'
   get 'article' => 'site#article'
   get 'about' => 'site#about'
-  get 'articleDetails1' => 'site#articleDetails1'  
+  get 'articleDetails1' => 'site#articleDetails1'
   match ':controller(/:action(/:id(.:format)))', :via => :all
 
   resource :wechat, only: [:show, :create]
