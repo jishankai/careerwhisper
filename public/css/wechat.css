@@ -1,0 +1,54 @@
+
+@media (min-width: 1024px){.container {width: 740px;}}
+*{font-family: "microsoft yahei";}
+i{font-style: normal;}
+b{font-weight: normal;}
+li{list-style: none;}
+ul{padding: 0;}
+.row{margin: 0;}
+.container{padding:0 10px;}
+/*精品课程页面*/
+.jpkc img{width: 100%;}
+.jpkc li{padding:0 6px;margin-bottom:12px;}
+.jpkc li b,.jpkc li p{padding: 0 4px;display: block;}
+.jpkc li p{padding: 0 4px;font-size: 13px;text-align: justify;line-height: 16px;color: #666;}
+.jpkc .box{border: 1px solid #ccc;background-color: #fff;}
+.jpkc .info span,.jpkc .info i{padding:3px 4px;font-style: normal;background-color: rgba(0, 0, 0, 0.4);color: #fff;font-size:12px;}
+.jpkc .info{margin-top: -27px;padding: 4px 0;}
+/*积分页面*/
+.credits{margin-top:20px;}
+.credits .nav-tabs{margin-bottom: 12px;}
+.credits th{background-color:#57a0df;color: #fff;text-align: center;}
+.credits .table:nth-child(2){display: none;}
+/*作业历史列表*/
+.tasks li{padding: 18px 0px;border-bottom: 1px solid #ddd;background-color: #fff;margin-top: 10px;}
+.tasks li div,.tasks li img{padding:0 10px;}
+.tasks li div{width: 60%;padding-right: 0;}
+.tasks li img{width: 40%;}
+.tasks li h5,.material li h5{margin-top:5px;font-size: 15.5px;font-weight: bold;font-family: "microsoft yahei";line-height: 19px;}
+.tasks li span{color: #777;}
+/*学习资料下载*/
+.material li{padding: 5px 10px 18px 10px;box-shadow: 0 0.2rem 1rem #ccc;margin-bottom: 16px;background-color: #fff;}
+.material li h5{font-size: 17px;}
+.material li h5 span{font-weight: normal;font-size: 15px;margin-left: 10px;}
+.material li a{float: right;padding: 0 12px;margin-top: -2px;}
+.material li i{color: #888;font-weight: bold;}
+/*请假记录*/
+.prompt{padding: 5px;margin-top: 15px;}
+.leave_record .prompt span{color: #32aad4;font-size: 12px;}
+.leaveInfo,.leaveList{background-color: #fff;text-align: center;padding: 25px 0;box-shadow: 0 0 1rem #ddd;margin: 20px 0;border-top: 3px dashed #1489cc;border-radius: 6px;}
+.leaveInfo .btn{padding: 3px 23px;margin-top: 22px;}
+.leaveInfo input,.leaveInfo select{padding: 4px 1px;margin-bottom: 6px;}
+.leaveInfo label{font-weight: normal;}
+.leaveList{border: none;text-align: left;padding: 25px 18px;}
+.leave_record h4{margin-bottom: 22px;font-weight: bold;}
+.leaveList li span{color: #888;}
+.leaveList li p{font-size: 16px;color: #444;margin-top: 8px;}
+.leaveList li{border-bottom: 1px solid #ccc;padding-top: 10px;display: none;}
+.leaveList li p i{color: #438ac8;}
+/*意见反馈内容*/
+.feedback{margin-top:36px;text-align: center;}
+.feedback input,.feedback textarea{width: 66%;display: inline-block;}
+.feedback input{height: 35px;}
+.feedback label{float: left;text-align: right;display: block;width: 20%;}
+.feedback button{width: 24%;font-size: 13px}
