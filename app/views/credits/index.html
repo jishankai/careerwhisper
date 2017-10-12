@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<meta name="format-detection" content="telephone=no">
+		<title>职业说careerwhisper</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/wechat.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h3 class="text-center titles">积分排行</h3>
+			<div class="credits">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#">上周积分</a>
+					</li>
+					<li>
+						<a href="#">总积分</a>
+					</li>
+				</ul>
+				<div class="table_box">
+					<table class="table table-bordered text-center">
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>积分</th>
+								<th>排名</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>张三</td>
+								<td>20</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>李四</td>
+								<td>40</td>
+								<td>22</td>
+							</tr>
+							<tr>
+								<td>王五</td>
+								<td>30</td>
+								<td>33</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-bordered text-center">
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>积分</th>
+								<th>排名</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Tanmay</td>
+								<td>Bangalore</td>
+								<td>560002</td>
+							</tr>
+							<tr>
+								<td>Sachin</td>
+								<td>Mumbai</td>
+								<td>400003</td>
+							</tr>
+							<tr>
+								<td>Uma</td>
+								<td>Pune</td>
+								<td>411027</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".credits .nav li").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			var index=$(this).index();
+			$(".credits .table").eq(index).show().siblings().hide()
+		})
+	</script>
+</html>

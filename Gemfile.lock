@@ -273,6 +273,3 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   wechat
   weui-rails
-
-BUNDLED WITH
-   1.15.4

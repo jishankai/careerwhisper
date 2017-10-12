@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+		<meta name="format-detection" content="telephone=no">
+		<title>职业说careerwhisper</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/wechat.css" />
+	</head>
+
+	<body style="background-color: #efeff4;">
+		<div class="container">
+			<div class="leave_record">
+				<div class="prompt">
+					<p>如有特殊情况无法参加课程，还请提前请假，否则影响获得积分哦~</p>
+					<span>学生签到(签到+10分,请假+5分,缺勤0分,每周公布积分排名)</span>
+				</div>
+				<div class="leaveInfo">
+					<h4>请假单</h4>
+					<form action="" method="post" id="form">
+						<p>
+							<label for="">姓名：</label>
+							<input class="youName" name="" id="" value="" />
+						</p>
+						<p>
+							<label for="">请假时间：</label>
+							<select name="" class="year">
+								<!--<option value="2017">2017</option>-->
+							</select>
+							<label for="">年</label>
+							<select name="" class="month">
+								<!--<option value="1">1</option>-->
+							</select>
+							<label for="">月</label>
+							<select name="" class="day">
+								<!--<option value="1">1</option>-->
+							</select>
+							<label for="">日</label>
+						</p>
+						<button type="button" class="btn btn-primary submitBtn">提交</button>
+					</form>
+				</div>
+				<div class="leaveList">
+					<h4 class="text-center">请假记录</h4>
+					<ul>
+						<!--<li>
+							<span class="nowtime">2017年10月11日</span>
+							<p><b>张三</b><i>2017年10月20日</i>请假</p>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var myDate = new Date();
+		var nowyear=myDate.getFullYear();//当前年份
+		var todayYear=nowyear+1;
+		var nowmonth=myDate.getMonth()+1;//当前月份
+		var nowdate=myDate.getDate();//当前号数
+		var str =nowyear+"年"+nowmonth+"月"+nowdate+"日"//把日期拼接成年月日
+		var arr=[];
+		var year1=nowyear
+		var month1=nowmonth
+		var day1=nowdate
+		var todayDate=new Date(""+year1+"",""+month1+"",0).getDate(); 
+		//1.判断年月日动态添加方法
+		function appendChild(now,bigTime,ele){
+			for(var i=now;i<=bigTime;i++){
+			$(ele).append("<option value='"+i+"'>"+i+"</option>")
+			}}
+
+		appendChild(nowyear,todayYear,".year");
+		appendChild(nowmonth,12,".month");
+		appendChild(nowdate,todayDate,".day");
+		
+		//2.判断年改变事件时更改月日显示内容
+		$(".year").change(function(){
+			year1=$(".year").val()
+			todayDate = new Date(""+year1+"",""+month1+"",0).getDate();
+			/*console.log(todayDate)*/ 
+			$(".month").html("") 
+			if($(".year").val()!=nowyear){
+				appendChild(1,12,".month");
+			}else{
+				appendChild(nowmonth,12,".month");
+			}
+			 
+			$(".day").html("")
+			if($(".year").val()!=nowyear||$(".month").val()!=nowmonth){
+				appendChild(1,todayDate,".day")
+			}else{
+				todayDate = new Date(""+nowyear+"",""+nowmonth+"",0).getDate();
+				appendChild(nowdate,todayDate,".day")
+			}	
+		})
+		//3.判断月改变时查看年是否变化确定当月显示多少天
+		$(".month").change(function(){
+			month1=$(".month").val()
+			todayDate = new Date(""+year1+"",""+month1+"",0).getDate(); 
+			
+			$(".day").html("")
+			if($(".year").val()!=nowyear||$(".month").val()!=nowmonth){
+				appendChild(1,todayDate,".day")
+			}else{
+				appendChild(nowdate,todayDate,".day")
+			}	
+		})
+		//4.提交按钮点击判断用户输入是否为空或者重复给出提示
+		$(".submitBtn").click(function(){
+			var name=$(".youName").val();
+			if(name!=""&&name!=undefined){
+				/*$("#form").submit()*/
+				var names=$(".youName").val();
+			}else{
+				alert("请输入姓名")
+				return
+			}
+			$(".leaveList ul li").each(function(index,ele){
+				arr.push($(ele).text())
+			})
+			var str1=$(".year").val()+"年"+$(".month").val()+"月"+$(".day").val()+"日"
+			var str2=str+names+str1+"请假"
+			var status=true;
+			$(arr).each(function(index,ele){
+				if(str2==ele){
+					status=false;
+				}})
+			if(status==false){
+				alert("请勿重复申请");
+				return
+			}else{
+				$(".leaveList ul").prepend("<li><span>"+str+"</span><p><b>"+names+"</b><i>"+str1+"</i>请假</p></li>");
+				$(".leaveList ul li").show(600);
+				$(".youName").val("")
+			}})
+
+		
+	</script>
+</html>
