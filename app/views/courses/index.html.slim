@@ -1,31 +1,30 @@
-h1 Listing courses
+.jpkc
+  - @courses.each do |course|
+    .row[style="margin-top:16px"]
+      a.col-md-12.col-sm-12.col-xs-12[href=course.href]
+        .box
+          - i = course.img.nil? ? asset_path("coursedefault.jpg") : asset_path(course.img)
+          img.img-responsive[src=i alt=""]
+          .row.info
+            span.col-md-4.col-sm-4.col-xs-6
+              = course.speaker
+            i.col-md-8.col-sm-8.col-xs-6.text-right
+              = course.start_at
+          .row[style="padding:0 2px; margin-bottom:4px"]
+            .text-center
+              = course.name
+            / p.text-justify
+            /   = course.description
 
-table
-  thead
-    tr
-      th Name
-      th Description
-      th Speaker
-      th Speaker intro
-      th Start at
-      th End at
-      th
-      th
-      th
-
-  tbody
-    - @courses.each do |course|
-      tr
-        td = course.name
-        td = course.description
-        td = course.speaker
-        td = course.speaker_intro
-        td = course.start_at
-        td = course.end_at
-        td = link_to 'Show', course
-        td = link_to 'Edit', edit_course_path(course)
-        td = link_to 'Destroy', course, data: { confirm: 'Are you sure?' }, method: :delete
-
-br
-
-= link_to 'New Course', new_course_path
+  / tbody
+  /   - @courses.each do |course|
+  /     tr
+  /       td = course.name
+  /       td = course.description
+  /       td = course.speaker
+  /       td = course.speaker_intro
+  /       td = course.start_at
+  /       td = course.end_at
+  /       td = link_to 'Show', course
+  /       td = link_to 'Edit', edit_course_path(course)
+  /       td = link_to 'Destroy', course, data: { confirm: 'Are you sure?' }, method: :delete

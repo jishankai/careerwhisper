@@ -1,29 +1,12 @@
-h1 Listing surveys
-
-table
-  thead
-    tr
-      th Name
-      th Description
-      th Href
-      th Start at
-      th End at
-      th
-      th
-      th
-
-  tbody
-    - @surveys.each do |survey|
-      tr
-        td = survey.name
-        td = survey.description
-        td = survey.href
-        td = survey.start_at
-        td = survey.end_at
-        td = link_to 'Show', survey
-        td = link_to 'Edit', edit_survey_path(survey)
-        td = link_to 'Destroy', survey, data: { confirm: 'Are you sure?' }, method: :delete
-
-br
-
-= link_to 'New Survey', new_survey_path
+ul.material[style="margin:0 6px"]
+  - @surveys.each do |survey|
+    li
+      h5
+        = survey.name
+      p.text-justify
+        = survey.description
+      div
+        i
+          = survey.start_at
+        a[href=survey.href]
+          img[src="images/downIcon.png"]

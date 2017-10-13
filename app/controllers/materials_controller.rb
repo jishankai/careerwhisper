@@ -1,10 +1,20 @@
 class MaterialsController < ApplicationController
   layout 'wechat'
   before_action :set_material, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
+  def after_sign_in_path_for(resource_or_scope)
+    request.referrer
+  end
+  def after_sign_out_path_for(resource_or_scope)
+    request.referrer
+  end
 
   # GET /materials
   # GET /materials.json
   def index
+    set_meta_tags title: '学习资料'
+
     @materials = Material.all
   end
 

@@ -1,10 +1,20 @@
 class SurveysController < ApplicationController
   layout 'wechat'
   before_action :set_survey, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
+  def after_sign_in_path_for(resource_or_scope)
+    request.referrer
+  end
+  def after_sign_out_path_for(resource_or_scope)
+    request.referrer
+  end
 
   # GET /surveys
   # GET /surveys.json
   def index
+    set_meta_tags title: '问卷列表'
+
     @surveys = Survey.all
   end
 

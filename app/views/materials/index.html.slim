@@ -1,27 +1,12 @@
-h1 Listing materials
-
-table
-  thead
-    tr
-      th Name
-      th Description
-      th Href
-      th Downloads
-      th
-      th
-      th
-
-  tbody
-    - @materials.each do |material|
-      tr
-        td = material.name
-        td = material.description
-        td = material.href
-        td = material.downloads
-        td = link_to 'Show', material
-        td = link_to 'Edit', edit_material_path(material)
-        td = link_to 'Destroy', material, data: { confirm: 'Are you sure?' }, method: :delete
-
-br
-
-= link_to 'New Material', new_material_path
+ul.material[style="margin:0 6px"]
+  - @materials.each do |material|
+    li
+      h5
+        = material.name
+      p.text-justify
+        = material.description
+      div
+        i
+          = material.updated_at
+        a[href=material.href]
+          img[src="images/downIcon.png"]

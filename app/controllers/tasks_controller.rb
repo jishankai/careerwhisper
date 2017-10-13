@@ -1,16 +1,27 @@
 class TasksController < ApplicationController
   layout 'wechat'
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
+  def after_sign_in_path_for(resource_or_scope)
+    request.referrer
+  end
+  def after_sign_out_path_for(resource_or_scope)
+    request.referrer
+  end
 
   # GET /tasks
   # GET /tasks.json
   def index
+    set_meta_tags title: '作业列表'
+
     @tasks = Task.all
   end
 
   # GET /tasks/1
   # GET /tasks/1.json
   def show
+    set_meta_tags title: '作业详情'
   end
 
   # GET /tasks/new

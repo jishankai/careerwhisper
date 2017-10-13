@@ -28,7 +28,7 @@ gem 'mysql2', '~> 0.3.18'
 gem 'simple_form'
 gem 'slim-rails', '3.1.2'
 gem 'bigdecimal'
-gem 'json'
+gem 'json', '1.8.6'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
@@ -44,4 +44,14 @@ gem 'jquery-rails'
 
 gem 'wechat'
 gem 'weui-rails'
+
+gem 'devise'
+gem 'omniauth-wechat-oauth2', :github => 'skji/omniauth-wechat-oauth2'
+
+gem 'figaro'
+gem "rails-i18n"
+
+# SEO
+gem 'meta-tags'
+gem 'sitemap_generator'
 ##########################################################################

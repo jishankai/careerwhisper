@@ -1,0 +1,22 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="UTF-8"]
+    meta[name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"]
+    title
+      | 职业说
+    = stylesheet_link_tag '1st_load_framework', media: 'all'
+    = stylesheet_link_tag "devise", :media => 'all', 'data-turbolinks-track' => 'reload'
+    = stylesheet_link_tag 'weui-rails', media: 'all'
+    script[src="http://cdnjs.gtimg.com/cdnjs/libs/zepto/1.1.4/zepto.min.js"]
+  body.ubg[ontouchstart]
+    .container-fluid
+      .col-md-offset-4.col-md-4.wrapper
+        center.row.logo
+          = image_tag('logo.png', size:'160x64', class:'img-responsive', style:'margin-top:32px')
+        .row[style='margin:24px auto;']
+          / p.notice
+          /   = notice
+          / p.alert
+          /   = alert
+          = yield

@@ -1,10 +1,20 @@
 class CoursesController < ApplicationController
   layout 'wechat'
   before_action :set_course, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
+  def after_sign_in_path_for(resource_or_scope)
+    request.referrer
+  end
+  def after_sign_out_path_for(resource_or_scope)
+    request.referrer
+  end
 
   # GET /courses
   # GET /courses.json
   def index
+    set_meta_tags title: '精品课程'
+
     @courses = Course.all
   end
 

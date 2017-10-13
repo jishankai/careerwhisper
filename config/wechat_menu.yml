@@ -1,0 +1,49 @@
+# More option see https://github.com/Eric-Guo/wechat#menu-create
+button:
+ -
+  name: "特色推荐"
+  sub_button:
+   -
+    type: "view"
+    name: "精英课程"
+    url:  "http://careerwhisper.com/course"
+   -
+    type: "view"
+    name: "大咖导师"
+    url:  "http://careerwhisper.com/teacher"
+   -
+    type: "view"
+    name: "推荐书籍"
+    url:  "http://careerwhisper.com/books"
+   -
+    type: "view"
+    name: "文章列表"
+    url:  "http://careerwhisper.com/article"
+ -
+  name: "课程助手"
+  sub_button:
+   -
+    type: "view"
+    name: "课程安排"
+    url:  "http://careerwhisper.com/courses"
+   -
+    type: "view"
+    name: "作业查询"
+    url:  "http://careerwhisper.com/tasks"
+   -
+    type: "view"
+    name: "资料下载"
+    url:  "http://careerwhisper.com/materials"
+   -
+    type: "view"
+    name: "问卷调查"
+    url:  "http://careerwhisper.com/surveys"
+   -
+    type: "view"
+    name: "意见反馈"
+    url:  "http://careerwhisper.com/feedback"
+
+ -
+  type: "view"
+  name: "关于我们"
+  url:  "http://careerwhisper.com/about"
