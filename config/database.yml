@@ -35,8 +35,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: careerwhisper_production
+  database: <%= ENV["DATABASE_NAME"] %>
   pool: 5
-  username: root
-  password: root
-  host: localhost
+  username: <%= ENV["DATABASE_USERNAME"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+  host: <%= ENV["DATABASE_HOST"] %>
