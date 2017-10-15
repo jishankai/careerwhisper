@@ -18,6 +18,11 @@ class WechatsController < ApplicationController
   # on :click, with: 'BOOK_LUNCH' do |request, key|
   #   request.reply.text "User: #{request[:FromUserName]} click #{key}"
   # end
+  on :click, with: 'ABOUTUS' do |request, key|
+    request.reply.text "商务合作或报名职业说金融课程，请电话或者微信咨询：
+辅导员Amber老师 13681039513
+辅导员季老师 18611715161"
+  end
 
   # 当用户点击菜单时
   # on :view, with: 'http://wechat.somewhere.com/view_url' do |request, view|

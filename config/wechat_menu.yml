@@ -19,6 +19,10 @@ button:
     type: "view"
     name: "文章列表"
     url:  "http://careerwhisper.com/article"
+   -
+    type: "view"
+    name: "精彩回顾"
+    url:  "http://mp.weixin.qq.com/mp/homepage?__biz=MzU0MjE3MTIwNg==&hid=1&sn=69cfde4a45e3cb45da65bc49a0582cca"
  -
   name: "课程助手"
   sub_button:
@@ -44,6 +48,6 @@ button:
     url:  "http://careerwhisper.com/feedback"
 
  -
-  type: "view"
+  type: "click"
   name: "关于我们"
-  url:  "http://careerwhisper.com/about"
+  key:  "ABOUTUS"
