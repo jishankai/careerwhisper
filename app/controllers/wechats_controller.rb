@@ -3,9 +3,9 @@ class WechatsController < ApplicationController
   wechat_responder
 
   def index
-
+    render plain: params['echostr']
   end
-  
+
   # 默认文字信息responder
   on :text do |request, content|
     request.reply.text "echo: #{content}" #Just echo
