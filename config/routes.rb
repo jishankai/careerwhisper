@@ -17,5 +17,5 @@
   get 'articleDetails1' => 'site#articleDetails1'
   match ':controller(/:action(/:id(.:format)))', :via => :all
 
-  resource :wechat, only: [:show, :create]
+  resource :wechat, only: [:show, :create, :index]
 end
