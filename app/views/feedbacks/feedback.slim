@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta[http-equiv="Content-Type" content="text/html; charset=utf-8"]
+    meta[content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport"]
+    meta[name="format-detection" content="telephone=no"]
+    title
+      | 职业说careerwhisper
+    link[href="css/bootstrap.min.css" rel="stylesheet"]
+    link[rel="stylesheet" type="text/css" href="css/wechat.css"]
+  body
+    .container
+      .feedback
+        form#forms[action=""]
+          p.form-group
+            label[for=""]
+              | 联系方式:
+            input#phone.form-control[type="text" name="" value=""]
+          p.form-group
+            label[for=""]
+              | 反馈内容:
+            textarea#problem.form-control[name="" rows="6" cols="38"]
+          button#btnsubmit.btn.btn-primary.btn-sm[type="button"]
+            | 提交
+  script[src="js/jquery.min.js" type="text/javascript" charset="utf-8"]
+  script[type="text/javascript"]
+    |  $(function(){ // 工具方法 function isEmpty(tmp) { return tmp == null || tmp == ""; } $("#btnsubmit").click(function () { var phone = $("#phone").val(); var phoneReg = /^[1-9]{1}[0-9]{10}$/; if(isEmpty(phone) || !phoneReg.test(phone)) { // 提示 alert('请输入正确电话号码'); return false; } var name = $("#problem").val(); if(isEmpty(name)) { alert('请输入问题描述'); // 提示 return false; } $("#forms").submit(); }); }) 

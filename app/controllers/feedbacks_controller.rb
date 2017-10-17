@@ -1,9 +1,20 @@
 class FeedbacksController < ApplicationController
+  layout 'devise'
   before_action :set_feedback, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
+  def after_sign_in_path_for(resource_or_scope)
+    request.referrer
+  end
+  def after_sign_out_path_for(resource_or_scope)
+    request.referrer
+  end
 
   # GET /feedbacks
   # GET /feedbacks.json
   def index
+    set_meta_tags title: '意见反馈'
+
     @feedbacks = Feedback.all
   end
 
@@ -14,6 +25,8 @@ class FeedbacksController < ApplicationController
 
   # GET /feedbacks/new
   def new
+    set_meta_tags title: '意见反馈'
+
     @feedback = Feedback.new
   end
 
@@ -25,10 +38,11 @@ class FeedbacksController < ApplicationController
   # POST /feedbacks.json
   def create
     @feedback = Feedback.new(feedback_params)
+    @feedback.user_id = current_user.id
 
     respond_to do |format|
       if @feedback.save
-        format.html { redirect_to @feedback, notice: 'Feedback was successfully created.' }
+        format.html { redirect_to @feedback, notice: '提交成功！' }
         format.json { render :show, status: :created, location: @feedback }
       else
         format.html { render :new }

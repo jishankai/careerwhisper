@@ -1,9 +1,9 @@
 = simple_form_for(@feedback) do |f|
   = f.error_notification
-
+  
   .form-inputs
-    = f.input :description
-    = f.association :user
+    = f.text_area :description, :label=>"描述", :rows => 10, style: 'width:100%'
+    / = f.association :user
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, :value=>'提交', class:"btn btn-success btn-block"

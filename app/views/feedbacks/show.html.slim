@@ -1,12 +1,16 @@
 p#notice = notice
 
-p
-  strong Description:
-  = @feedback.description
-p
-  strong User:
-  = @feedback.user
+.row.text-center
+  .row
+    | 描述:
+  .row
+    = @feedback.description
+.row.text-center
+  .row
+    | 用户:
+  .row
+    = @feedback.user.email
 
-= link_to 'Edit', edit_feedback_path(@feedback)
-'  |
-= link_to 'Back', feedbacks_path
+/ = link_to 'Edit', edit_feedback_path(@feedback)
+/ '  |
+/ = link_to 'Back', feedbacks_path
