@@ -19,6 +19,6 @@ class SiteController < ApplicationController
   def about
   end
 
-  def articleDetails1
+  def feedback
   end
 end

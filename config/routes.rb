@@ -1,4 +1,5 @@
  Rails.application.routes.draw do
+  resources :feedbacks
   devise_for :users
   resources :courses
   resources :tasks
@@ -14,7 +15,7 @@
   get 'teacher' => 'site#teacher'
   get 'article' => 'site#article'
   get 'about' => 'site#about'
-  get 'articleDetails1' => 'site#articleDetails1'
+  get 'feedback' => 'site#feedback'
   match ':controller(/:action(/:id(.:format)))', :via => :all
 
   resource :wechat, only: [:show, :create]
