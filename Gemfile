@@ -46,7 +46,6 @@ gem 'wechat'
 gem 'weui-rails'
 
 gem 'devise'
-gem 'omniauth-wechat-oauth2', :github => 'skji/omniauth-wechat-oauth2'
 
 gem 'figaro'
 gem "rails-i18n"
