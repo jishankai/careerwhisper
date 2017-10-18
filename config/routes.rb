@@ -18,6 +18,6 @@
   get 'article' => 'site#article'
   get 'about' => 'site#about'
   get 'feedback' => 'site#feedback'
-  match ':controller(/:action(/:id(.:format)))', :via => :all
+  # match ':controller(/:action(/:id(.:format)))', :via => :all
 
 end
