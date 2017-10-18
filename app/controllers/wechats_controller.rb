@@ -4,14 +4,15 @@ class WechatsController < ActionController::Base
 
   # 默认文字信息responder
   on :text do |request, content|
-    request.reply.text "echo: #{content}" #Just echo
+    request.reply.text "#{content}" #Just echo
   end
 
   # 当用户加关注
   on :event, with: 'subscribe' do |request|
     request.reply.text "欢迎 #{request[:FromUserName]} 关注职业说！
 我们为精英人才提供知识付费服务！
-职业的人说职业的事，不灌鸡汤只吃肉！"
+职业的人说职业的事，不灌鸡汤只吃肉！
+了解职业说课程，可点击：http://t.cn/ROdE5Pz"
   end
 
   # 当用户点击菜单时
