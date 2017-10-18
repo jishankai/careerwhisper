@@ -45,7 +45,7 @@ button:
    -
     type: "view"
     name: "意见反馈"
-    url:  "http://careerwhisper.com/feedbacks"
+    url:  "http://careerwhisper.com/feedbacks/new"
 
  -
   type: "click"

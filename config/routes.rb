@@ -1,8 +1,8 @@
  Rails.application.routes.draw do
   resource :wechats, only: [:show, :create]
 
-  resources :feedbacks
   devise_for :users
+  resources :feedbacks
   resources :courses
   resources :tasks
   resources :materials
