@@ -1,4 +1,6 @@
  Rails.application.routes.draw do
+  resource :wechat, only: [:show, :create]
+
   resources :feedbacks
   devise_for :users
   resources :courses
@@ -18,5 +20,4 @@
   get 'feedback' => 'site#feedback'
   match ':controller(/:action(/:id(.:format)))', :via => :all
 
-  resource :wechat, only: [:show, :create]
 end
