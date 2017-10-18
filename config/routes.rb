@@ -1,5 +1,5 @@
  Rails.application.routes.draw do
-  resource :wechat, only: [:show, :create]
+  resource :wechats, only: [:show, :create]
 
   resources :feedbacks
   devise_for :users
