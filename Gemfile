@@ -29,6 +29,8 @@ gem 'simple_form'
 gem 'slim-rails', '3.1.2'
 gem 'bigdecimal'
 gem 'json', '1.8.6'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
@@ -46,7 +48,6 @@ gem 'wechat'
 gem 'weui-rails'
 
 gem 'devise'
-gem 'omniauth-wechat-oauth2', :github => 'skji/omniauth-wechat-oauth2'
 
 gem 'figaro'
 gem "rails-i18n"

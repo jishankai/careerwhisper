@@ -46,7 +46,7 @@
           <div class="col-md-12">
             <h2>大咖加盟，精英集结，打造未来金融之星</h2>
             <h3>只为精英开设的课程</h3>
-            <p><a href="">立刻报名</a></p>
+            <p><a href="#Amber">立刻报名</a></p>
           </div>
         </div>
       </div>
@@ -501,7 +501,7 @@
   <div class="bg courseCode">
     <div class="container clearfix text-center">
       <section class="row">
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-5 col-xs-12" id="Amber">
           <h3>课程咨询</h3>
           <dl class="bgf6">
             <dt><img src="images/zxcode.jpg"></dt>
@@ -511,16 +511,16 @@
             </dd>
           </dl>
         </div>
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-7 col-xs-12">
           <h3>课程付款</h3>
           <div class="clearfix payCode">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-6 col-xs-6">
               <dl>
                 <dt><img src="images/wx.jpg"></dt>
                 <dd><img src="images/kanwokanwocode.jpg"></dd>
               </dl>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-6 col-xs-6">
               <dl>
                 <dt><img src="images/zfb.jpg"></dt>
                 <dd><img src="images/kanwokanwocode.jpg"></dd>
@@ -532,7 +532,7 @@
         </div>
       </section>
       <div class="row">
-        <div class="col-md-12"><a href="">立即报名</a></div>
+        <div class="col-md-12"><a href="#Amber">立即报名</a></div>
       </div>
     </div>
   </div>
@@ -575,6 +575,16 @@
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript">
 	jQuery(".coursefocusBox").slide({ mainCell:".focus",effect:"left", delayTime:300});
+	//判断微信打开隐藏顶部导航
+	var ua = navigator.userAgent.toLowerCase();
+　 var isWeixin = ua.indexOf('micromessenger') != -1;
+　　if (isWeixin) {
+  	$("header").hide()
+　　}else{
+		$(window).scroll(function(){
+			$("#bs-navbar").removeClass("in")
+		})
+	}
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

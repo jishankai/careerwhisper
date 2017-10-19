@@ -52,3 +52,10 @@ ul{padding: 0;}
 .feedback input{height: 35px;}
 .feedback label{float: left;text-align: right;display: block;width: 20%;}
 .feedback button{width: 24%;font-size: 13px}
+
+.tasksList .title{margin: 40px 10px;}
+.tasksList li h4{font-size: 17px;font-weight: bold;}
+.tasksList li b{font-size: 15px;display: block;margin-bottom: 20px;text-decoration: underline;}
+.tasksList li{margin: 0 10px;border-bottom: 1px dashed #999;}
+.tasksList .show{box-shadow: 0 0 1rem #ccc;margin: 30px 10px;padding: 10px;border: none;}
+.tasksList .show img{width: 100%;}

@@ -21,7 +21,7 @@ footer .footPt{width:274px;}
 @media (min-width:768px) and (max-width:1024px) {footer .col-sm-6{min-height:240px;}}
 
 section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px solid #303030;display:inline-block;margin-bottom:20px;}
-@media (min-width:768px){section h2{font-size:36px;}}
+@media (min-width:768px){section h2{font-size:28px;}}
 .banner{background-position:center bottom;background-repeat:no-repeat;background-size:cover;min-height:280px;margin-bottom:20px;}
 /*职业导师*/
 .teacher .banner{background-image:url(../images/teacher.jpg);}
@@ -37,7 +37,7 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 .counselor dl h3{color:#014e78;text-align: center;}
 .counselor dl h5{font-size:16px;line-height:1.4;text-align: center}
 .counselor dd{padding:0 20px;height:auto;}
-@media (min-width:768px){.counselor dl{min-height:320px;}}
+@media (min-width:768px){.counselor dl{min-height:502px;}}
 .p-teacher{border-radius:55px;padding:10px 30px;margin:60px 0;background-color:#fff;border:1px solid #dbdbdb;display:inline-block;}
 /*关于我们*/
 .about .banner{background-image:url(../images/about.jpg);}
@@ -71,14 +71,14 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 	.course .banner h3{font-size:22px;margin-top:20px;}
 }
 .course .bg{padding:0;}
-.course .bgf6{background-color:#f6f6f6;}
+.course .bgf6{background-color:#f6f6f6;padding-bottom: 30px;}
 @media (min-width:768px){.bg{padding:80px 0;}}
 .courseWhy .courseWhytop{padding-top:4%;}
 .courseWhy .courseWhybottom{padding-bottom:2%;}
 .courseWhy dl{height:auto;padding-top:10px;max-width:380px;margin:0 auto;}
 .courseWhy dt{text-align:center;}
 .courseWhy img{max-width:360px;width: 100%;}
-.courseWhy h4{font-weight:900;}
+.courseWhy h4{font-weight:900;font-family: "microsoft yahei";}
 .courseWhy h4 span{color:#0c547e;}
 .courseWhybottom dl{max-width:380px;margin:0 auto;text-align:left;}
 @media (min-width:1024px){.courseWhy dl{height:180px;padding-top:40px;}
@@ -96,7 +96,7 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 
 .contentSet h3{background-color:#0c547e;color:#fff;margin-bottom:20px;display:inline-block;padding:6px 30px;margin-top:0px;}
 @media (min-width:768px){.contentSet h3{margin-top:50px;}}
-.contentSet h5{color:#000;font-weight:900;}
+.contentSet h5{color:#000;font-weight:900;font-size: 15px;font-family: "microsoft yahei";}
 .contentSet dd{border-top:1px solid #b6b6b6;padding-top:10px;max-height:150px;}
 .harvest dd{margin:20px 0 0;}
 .coursefocusBox{position: relative;overflow: hidden;margin-top:4%;}
@@ -116,24 +116,30 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 .coursefocusBox .prev:hover,.coursefocusBox .next:hover{filter:alpha(opacity=100);opacity:1;}
 .courseOutline ul{padding:4px;}
 .courseOutline li{border-bottom:1px dotted #676767;padding-left:10px;height:40px;line-height:40px;position:relative;}
-.courseOutline li p{width:84%;height:40px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
-.courseOutline li .posA{color:#859db1;font-size:12px;display:block;position:absolute;right:10px;top:4px;}
+.courseOutline li p{width:84%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.courseOutline li .posA{color:#859db1;font-size:12px;display:block;position:absolute;right:10px;top:4px;display: none;}
 
-.bgask{background-position:center bottom;background-repeat:no-repeat;background-size:cover;background-image:url(../images/courseAsk.png);min-height:446px;position:relative;}
-@media (min-width:768px){.bgask{height:536px;}}
-.center{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);min-width:320px;}
+.bgask{min-height:446px;position:relative;}
+.center{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width: 94%;background-color: #f6f6f6;padding: 20px 5px;box-shadow: 0 0 1rem #9d9d9d;border: 2px dashed #0c547e;border-radius: 6px;}
+@media (min-width:768px){ .center{width: 61%;padding: 20px 5px;}}
+.center h4{font-size: 22px; font-family: "microsoft yahei";padding-bottom: 14px;color: #0c547e;}
 .courseCode h3{padding-top:8%;}
 .courseCode dl.bgf6{margin-top:60px;padding:12% 0;}
 .courseCode dl.bgf6 dd{margin-top:6%;}
 .payCode dl{border:1px solid #dcdcdc;margin-top:50px;padding:8% 6%;}
 .payCode dt{margin-bottom:4%;}
 .payCode dt{height:50px;}
-.payCode dd img{width:100%;max-width:230px;}
+.payCode dd img{width:68%;max-width:230px;}
+@media (max-width:560px) {
+	.payCode .col-xs-6{padding-right: 5px;padding-left: 5px;}
+	.payCode .col-xs-6 dt img{width: 80%;}
+	.payCode dd img{width: 92%;}
+}
 .courseCode a{background-color:#0c547e;display:inline-block;padding:8px 40px;border-radius:25px;color:#fff;margin:6% 0;font-size:18px;}
 /*文章页面*/
 .article{background-color: #eee;}
 .article .banner{background-image: url(../images/articleDetails.jpg);}
-.article .listItem{padding: 3% 3% 3% 6%;box-shadow: 0 0.3rem 1rem #c0bfbf;margin: 30px 0 15px 0;background-color: #fff;cursor: pointer;}
+.article .listItem{padding: 3% 3% 3% 6%;box-shadow: 0 0.3rem 1rem #c0bfbf;margin: 8px 0 15px 0;background-color: #fff;cursor: pointer;}
 .article .listItem span{text-align: right;font-size: 15px;}
 .article .listItem b{font-size: 20px;font-family: "microsoft yahei"}
 .article .listItem p{padding-left: 0;font-size: 16px;color: #777;margin-top: 0.6rem;height: 70px;}
@@ -160,3 +166,4 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 .articleTitle i{display: inline-block;width: 20%;border: 1px solid  #0a588d;}
 @media (max-width:768px){.articleTitle i{display: none;}.articleAudio audio{width: 100%;}.introduce p{text-align: left;width: 95%;padding:1rem;}.articleImg img{width: 76%;}.articleAudio{width: 100%;margin: 3rem 0;}}
 @media (max-width:460px){.articleImg img{width: 96%;}}
+
