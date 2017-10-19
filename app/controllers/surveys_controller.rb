@@ -1,5 +1,5 @@
 class SurveysController < ApplicationController
-  layout 'wechat'
+  layout 'apps', :except => :index
   before_action :set_survey, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
@@ -16,6 +16,8 @@ class SurveysController < ApplicationController
     set_meta_tags title: '问卷列表'
 
     @surveys = Survey.all
+
+    render layout:"wechat"
   end
 
   # GET /surveys/1

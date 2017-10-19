@@ -1,5 +1,5 @@
 class MaterialsController < ApplicationController
-  layout 'wechat'
+  layout 'apps', :except => :index
   before_action :set_material, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
@@ -16,6 +16,7 @@ class MaterialsController < ApplicationController
     set_meta_tags title: '学习资料'
 
     @materials = Material.all
+    render layout: "wechat"
   end
 
   # GET /materials/1

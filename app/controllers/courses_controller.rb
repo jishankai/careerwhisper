@@ -1,5 +1,5 @@
 class CoursesController < ApplicationController
-  layout 'wechat'
+  layout 'apps', :except => :index
   before_action :set_course, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
@@ -16,6 +16,7 @@ class CoursesController < ApplicationController
     set_meta_tags title: '精品课程'
 
     @courses = Course.all
+    render layout:"wechat"
   end
 
   # GET /courses/1

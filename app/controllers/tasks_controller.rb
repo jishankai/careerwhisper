@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  layout 'wechat'
+  layout 'apps', :except => :index
   before_action :set_task, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
@@ -16,6 +16,7 @@ class TasksController < ApplicationController
     set_meta_tags title: '作业列表'
 
     @tasks = Task.all
+    render layout: "wechat"
   end
 
   # GET /tasks/1
