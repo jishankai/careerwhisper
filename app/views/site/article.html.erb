@@ -106,7 +106,18 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/articleJson.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	
+	$(function(){
+		//判断微信打开隐藏顶部导航
+		var ua = navigator.userAgent.toLowerCase();
+	　 var isWeixin = ua.indexOf('micromessenger') != -1;
+	　　if (isWeixin) {
+	  	$("header").hide()
+	　　}else{
+		$(window).scroll(function(){
+			$("#bs-navbar").removeClass("in")
+		})
+	}
+	})
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

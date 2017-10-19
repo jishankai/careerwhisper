@@ -142,6 +142,17 @@
 				}
 			}
 		})
+		
+		//判断微信打开隐藏顶部导航
+		var ua = navigator.userAgent.toLowerCase();
+	　 var isWeixin = ua.indexOf('micromessenger') != -1;
+	　　if (isWeixin) {
+	  	$("header").hide()
+	　　}else{
+		$(window).scroll(function(){
+			$("#bs-navbar").removeClass("in")
+		})
+	}
 	})
 </script>
 <script>

@@ -52,6 +52,7 @@ section .col-md-4{padding-bottom:70px;}
 .about dl{background:#fff;border:1px solid #dcdcdc;}
 .about dt img{width:100%;}
 .about dd p{width:90%;margin:30px auto;}
+@media (min-width:768px){.about dl{min-height: 542px;}}
 /*在职业说*/
 .in img,.course img{width:100%;height:auto;}
 .inContent{background:url(../images/mark1.png) left top no-repeat;margin-top:6%;}
@@ -71,6 +72,7 @@ section .col-md-4{padding-bottom:70px;}
 .teachers dt{padding:45px 0;}
 .teachers dd{background:#fff;padding:20px;}
 .teachers dd h3{font-weight:900;margin:20px 0;}
+@media (min-width:768px){.teachers dd{min-height: 236px;}}
 /*优秀学员--轮播图*/
 .focusBox{position:relative;height:320px;overflow:hidden;}
 .focusBox .prev,.focusBox .next{width:54px;height:54px;position:absolute;top:90px;z-index:3;filter:alpha(opacity=60);opacity:.6;}
