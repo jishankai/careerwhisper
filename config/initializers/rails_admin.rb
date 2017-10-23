@@ -38,7 +38,7 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
-    PAPER_TRAIL_AUDIT_MODEL = ['Course', 'Material', 'Survey', 'Task']
+    PAPER_TRAIL_AUDIT_MODEL = ['Course', 'Material', 'Survey', 'Task', 'User']
     history_index do
       only PAPER_TRAIL_AUDIT_MODEL
     end

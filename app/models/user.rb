@@ -5,6 +5,4 @@ class User < ApplicationRecord
   :registerable,
   :recoverable,
   :rememberable, :trackable, :validatable
-
-  ROLE = {admin: "admin", member: "member", superadmin: "superadmin"}
 end
