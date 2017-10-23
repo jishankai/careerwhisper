@@ -9,4 +9,4 @@ ul.tasks[style="margin:0 6px"]
           br
         span
           = task.end_at
-      img.col-md-4.col-sm-4.col-xs-4[src="images/tasks.png"]
+      = image_tag task.avatar.url(:thumb), class:"col-md-4 col-sm-4 col-xs-4"

@@ -1,0 +1,16 @@
+/* line 1, /Users/jishankai/rails/careerwhisper/app/assets/stylesheets/devise.scss */
+.ubg {
+  background: #eef5fa;
+  width: 100%;
+  background-position: center;
+  background-attachment: scroll;
+  padding-top: 2%;
+}
+
+/* line 10, /Users/jishankai/rails/careerwhisper/app/assets/stylesheets/devise.scss */
+.wrapper {
+  background: #fff;
+  padding: 1% 2%;
+  -webkit-box-shadow: 0 1px 14px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 14px rgba(0, 0, 0, 0.3);
+}

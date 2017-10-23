@@ -7,6 +7,9 @@ p
   strong Description:
   = @course.description
 p
+  strong Avatar:
+  = image_tag @course.avatar.url(:medium)  
+p
   strong Speaker:
   = @course.speaker
 p

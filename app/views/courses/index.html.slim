@@ -3,8 +3,7 @@
     .row[style="margin-top:16px"]
       a.col-md-12.col-sm-12.col-xs-12[href=course.href]
         .box
-          - i = course.img.nil? ? asset_path("coursedefault.jpg") : asset_path(course.img)
-          img.img-responsive[src=i alt=""]
+          = image_tag course.avatar.url(:thumb), class:"img-responsive"
           .row.info
             span.col-md-4.col-sm-4.col-xs-6
               = course.speaker

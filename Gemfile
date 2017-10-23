@@ -32,6 +32,8 @@ gem 'json', '1.8.6'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :development do
+  gem 'byebug'
+  gem 'pry-byebug'
   gem 'better_errors'
   gem 'hub', :require=>nil
   gem 'rails_layout'
@@ -47,12 +49,24 @@ gem 'jquery-rails'
 gem 'wechat'
 gem 'weui-rails'
 
+# Users
 gem 'devise'
+gem "cancancan"
+gem 'paper_trail'
+gem 'enum_help'
 
+# Env
 gem 'figaro'
 gem "rails-i18n"
 
 # SEO
 gem 'meta-tags'
 gem 'sitemap_generator'
+
+# Avatar
+gem "paperclip", "~> 5.0.0"
+
+# Admin
+gem 'rails_admin', '~> 1.2'
+gem 'rails_admin_rollincode', '~> 1.0'
 ##########################################################################
