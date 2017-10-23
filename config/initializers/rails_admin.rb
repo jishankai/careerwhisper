@@ -1,6 +1,6 @@
 RailsAdmin.config do |config|
   config.main_app_name = ["职业说"]
-  config.excluded_models = ['Credit', 'User', 'WechatSession']
+  config.excluded_models = ['Credit', 'WechatSession']
   ### Popular gems integration
 
   ## == Devise ==
