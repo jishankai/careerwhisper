@@ -1,12 +1,13 @@
 ul.tasks[style="margin:0 6px"]
   - @tasks.each do |task|
-    li.row
-      .col-md-8.col-sm-8.col-xs-8
-        h5
-          = task.name
-        span
-          = task.start_at
-          br
-        span
-          = task.end_at
-      = image_tag task.avatar.url(:thumb), class:"col-md-4 col-sm-4 col-xs-4"
+    = link_to task
+      li.row
+        .col-md-8.col-sm-8.col-xs-8
+          h5
+            = task.name
+          span
+            = task.start_at
+            br
+          span
+            = task.end_at
+        = image_tag task.avatar.url(:thumb), class:"col-md-4 col-sm-4 col-xs-4"
