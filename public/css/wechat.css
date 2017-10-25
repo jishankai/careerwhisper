@@ -14,7 +14,7 @@ ul{padding: 0;}
 .jpkc li p{padding: 0 4px;font-size: 13px;text-align: justify;line-height: 16px;color: #666;}
 .jpkc .box{border: 1px solid #ccc;background-color: #fff;}
 .jpkc .info span,.jpkc .info i{padding:3px 4px;font-style: normal;background-color: rgba(0, 0, 0, 0.4);color: #fff;font-size:12px;}
-.jpkc .info{margin-top: -27px;padding: 4px 0;}
+.jpkc .info{margin-top: -50px;padding: 4px 0;}
 /*积分页面*/
 .credits{margin-top:20px;}
 .credits .nav-tabs{margin-bottom: 12px;}

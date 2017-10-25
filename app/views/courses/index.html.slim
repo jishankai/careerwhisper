@@ -5,13 +5,16 @@
         .box
           = image_tag course.avatar.url(:thumb), class:"img-responsive"
           .row.info
+            span.col-md-12.col-sm-12.col-xs-12
+             = course.name
+          .row.info
             span.col-md-4.col-sm-4.col-xs-6
-              = course.speaker
+              = course.speaker=="" ? "待定" : course.speaker
             i.col-md-8.col-sm-8.col-xs-6.text-right
               = course.start_at
           .row[style="padding:0 2px; margin-bottom:4px"]
-            .text-center
-              = course.name
+            .text-justify
+              = course.description
             / p.text-justify
             /   = course.description
 
