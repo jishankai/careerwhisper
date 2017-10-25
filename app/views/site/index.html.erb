@@ -333,7 +333,66 @@
 		$(window).scroll(function(){
 			$("#bs-navbar").removeClass("in")
 		})
-	}
+}
+	$(".about .row dl").hover(function(){
+		$(this).stop().animate({
+			"margin-top":"-1rem",
+		})
+		$(this).css("box-shadow","rgb(119, 119, 119) 0px 0px 2rem")
+	},function(){
+		$(this).stop().animate({
+			"margin-top":"0",
+		})
+		$(this).css("box-shadow","rgb(119, 119, 119) 0px 0px 0rem")
+	})
+	
+	$(function(){
+			$(".advantage .col-md-3").hover(function(){
+				$(".advantage .col-md-3").children("img").css({
+					"transform":"rotateY(0deg)",
+					"transition":"all 0s ease"
+				})
+				$(".advantage .col-md-3").children("h4").css("color","#333");
+				$(this).children("img").css({
+					"transform":"rotateY(360deg)",
+					"transition":"all 1.35s ease"
+				})
+				$(this).children("h4").css("color","#286090")
+				clearInterval(timer)
+			},function(){
+				$(this).children("img").css({
+					"transform":"rotateY(0deg)",
+					"transition":"all 0s ease"
+				})
+				$(this).children("h4").css("color","#333")
+				index=$(this).index()+1;
+				timer=setInterval(rotate,2000)
+			})
+			var timer=null;
+			var length=$(".advantage .col-md-3").length;
+			var index=0;
+			function rotate(){
+				//每次循环前重置旋转度数为0
+				$(".advantage .col-md-3").children("img").css({
+					"transform":"rotateY(0deg)",
+					"transition":"all 0s ease"
+				})
+				$(".advantage .col-md-3").children("h4").css("color","#333");
+				if(index<length){
+					/*console.log(index)*/
+					$(".advantage .col-md-3").eq(index).children("img").css({
+					"transform":"rotateY(360deg)",
+					"transition":"all 1.35s ease"
+				})
+					$(".advantage .col-md-3").eq(index).children("h4").css("color","#286090");
+					index++
+				}if(index==length){
+					/*console.log(index)*/
+					index=0;
+				}
+			}
+			timer=setInterval(rotate,2000)
+		})
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
