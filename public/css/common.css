@@ -33,11 +33,11 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 .counselor dl{background-color:#fff;width:90%;margin:20px auto 0;padding-bottom:20px;}
 /*名师顾问*/
 .counselor dl {min-height:320px;}
-.counselor dl img{width: 142px;display: block;border-radius: 100%;margin: 0 auto;}
+.counselor dl img{width: 142px;display: block;border-radius: 100%;margin: 0 auto;padding-top: 12px;}
 .counselor dl h3{color:#014e78;text-align: center;}
 .counselor dl h5{font-size:16px;line-height:1.4;text-align: center}
 .counselor dd{padding:0 20px;height:auto;}
-@media (min-width:768px){.counselor dl{min-height:502px;}}
+@media (min-width:768px){.counselor dl{min-height:502px;box-shadow: 0 0 2rem #ccc;}}
 .p-teacher{border-radius:55px;padding:10px 30px;margin:60px 0;background-color:#fff;border:1px solid #dbdbdb;display:inline-block;}
 /*关于我们*/
 .about .banner{background-image:url(../images/about.jpg);}
@@ -64,6 +64,7 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 .course .banner h2,.course .banner h3{font-size:18px;}
 .course .banner h3{margin-top:0px;margin-bottom:3%;}
 .course .banner a{border-radius:35px;border:2px solid #fff;display:inline-block;padding:4px 40px;color:#fff;}
+.course .banner a:hover{background-color: #286090;}
 @media (min-width:768px){
 	.banner{height:380px;}
 	.bannerCourse{margin-top:6%;}
@@ -72,7 +73,9 @@ section h2{color:#303030;font-size:34px;padding-bottom:16px;border-bottom:1px so
 }
 .course .bg{padding:0;}
 .course .bgf6{background-color:#f6f6f6;padding-bottom: 30px;}
-@media (min-width:768px){.bg{padding:80px 0;}}
+.course .bgf6 .col-md-4 dl{background-color: #fff;padding: 10px;}
+.contentSet .row .clearfix div:nth-child(2){border-left:1px dashed #ccc;border-right:1px dashed #ccc}
+@media (min-width:768px){.bg{padding:80px 0;} .course .bgf6 .col-md-4 dl{min-height: 335px;}}
 .courseWhy .courseWhytop{padding-top:4%;}
 .courseWhy .courseWhybottom{padding-bottom:2%;}
 .courseWhy dl{height:auto;padding-top:10px;max-width:380px;margin:0 auto;}

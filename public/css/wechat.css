@@ -33,6 +33,7 @@ ul{padding: 0;}
 .material li h5 span{font-weight: normal;font-size: 15px;margin-left: 10px;}
 .material li a{float: right;padding: 0 12px;margin-top: -2px;}
 .material li i{color: #888;font-weight: bold;}
+.material li a img{width: 34px;}
 /*请假记录*/
 .prompt{padding: 5px;margin-top: 15px;}
 .leave_record .prompt span{color: #32aad4;font-size: 12px;}
