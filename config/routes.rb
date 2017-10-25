@@ -21,6 +21,6 @@
   get 'feedback' => 'site#feedback'
   # get 'task' => 'tasks#tasks'
 
-  match ':controller(/:action(/:id(.:format)))', :via => :all
+  #match ':controller(/:action(/:id(.:format)))', :via => :all
 
 end
