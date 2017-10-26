@@ -65,6 +65,7 @@ gem 'sitemap_generator'
 
 # Avatar
 gem "paperclip", "~> 5.0.0"
+gem 'aws-sdk', '~> 2.3.0'
 
 # Admin
 gem 'rails_admin', '~> 1.2'
